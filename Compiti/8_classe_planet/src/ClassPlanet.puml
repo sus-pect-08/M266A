@@ -1,0 +1,36 @@
+@startuml
+
+class Planet {
+-name: String
+-mass: double
+-volume: double
+-density: double
+-radius: double
+-life: bool
+-population: bool
+-gas_giant: bool
+-albedo: float
++Planet()
++Planet(String name, double mass, double radius, double volume, double density, boolean life, boolean population, float albedo)
++getName(): String
++setName(): void
++getMass(): double
++setMass(): void
++getVolume(): double
++setVolume(): void
++getDensity(): double
++setDensity(): void
++getRadius(): double
++setRadius(): void
++getLife(): bool
++setLife(): void
++getGas_giant(): bool
++setGas_giant(): void
++getAlbedo(): float
++setAlbedo(): void
+
++toString() String
++accelerazione_gravitazionale(): double
+}
+
+@enduml
