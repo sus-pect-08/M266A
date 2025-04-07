@@ -1,8 +1,11 @@
+import java.util.LinkedList;
+import java.util.Objects;
+
 public class Playlist {
     private String titolo;
-    private Brano Brani[];
+    private LinkedList<Brano> Brani;
 
-    public Playlist(String titolo, Brano Brani[]) {
+    public Playlist(String titolo, LinkedList<Brano> Brani) {
         this.titolo = titolo;
         this.Brani = Brani;
     }
@@ -15,32 +18,24 @@ public class Playlist {
         this.titolo = titolo;
     }
 
-    public Brano[] getBrani() {
-        return Brani;
+    public Brano getBrani(int index) {
+        return Brani.get(index);
     }
 
-    public void setBrani(Brano[] brani) {
-        Brani = brani;
+    public void setBrani(LinkedList<Brano> Brani) {
+        this.Brani = Brani;
     }
-    int n = 0;
 
-    public String out(){
-        return Brani[n].titolo + " " +  (n+1);
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Playlist playlist = (Playlist) o;
+        return Objects.equals(titolo, playlist.titolo);
     }
-    public String next(){
-        if (n == Brani.length - 1){
-            n = 0;
-        }else {
-            n++;
-        }
-        return out();
-    }
-    public String previus(){
-        if (n == 0){
-            n = Brani.length - 1;
-        }else{
-        n--;
-        }
-        return out();
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(titolo);
     }
 }

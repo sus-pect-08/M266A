@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Player {
     private String modello;
     private String marca;
@@ -33,14 +35,50 @@ public class Player {
         this.playlist = playlist;
     }
 
+    int n = 0;
+    String result;
     public String play() {
-        return playlist.out();
+        return "playing: " + playlist.getTitolo() +
+                playlist.getBrani(n);
     }
     public String succesivo(){
-        return playlist.next();
+        try{
+            n ++;
+            return "playing: " + playlist.getTitolo() +
+                playlist.getBrani(n);
+        }catch (IndexOutOfBoundsException e){
+            return "non è presente alcun brano successivo";
+        }
     }
     public String precedente(){
-        return playlist.previus();
+        try {
+            n--;
+            return "playing: " + playlist.getTitolo() +
+                    playlist.getBrani(n);
+        }catch (IndexOutOfBoundsException e){
+            return "non è presente alcun brano precednete";
+        }
+    }
+    public String SelezionaBrano(int m){
+        try {
+            return "playing: " + playlist.getTitolo() +
+                    playlist.getBrani(m);
+        }catch (IndexOutOfBoundsException e){
+            return "non è presente quel numero di brano";
+        }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Player player = (Player) o;
+        return Objects.equals(modello, player.modello) && Objects.equals(marca, player.marca);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(modello, marca);
     }
 
     @Override
