@@ -1,0 +1,36 @@
+DOMANDE
+valsa a)
+monta b) (opzione di portarli gli occhiali)
+berna c) 
+pallu b)
+mussi c)
+sarto b)
+ponci a)
+
+PORTE
+Aula 421 (M129 valsagiacomo) --> cavi da raccogliere davanti alla porta nera(uno verde e uno viola)
+2 porta fiori --> Aula 347 (inglese pomponio) --> se viene provato a saltrare esce GAME OVER
+1 porta nera --> Aula 425 (M143 montalbetti)
+Aula 425
+2 porta grigia --> Aula 341 (tedeso Scholtischick) --> se viene provato ad andare contro il muro ci si fa male
+1 porta con cavi rotti --> Aula 421b (M153 Bernaschina) --> bisogna aver raccolto i cavi per arrivare alla stanza
+Aula 421b
+1 porta di metallo --> Aula 413 (M226A Pallucci) --> bisogna spingere con forza
+2 buco nella parete --> accendere la torcia con il telefono, ci sono dei ragni e torna indietro //solo possibile se si ha trovato il cellulare
+Aula 413
+1 porta di legno --> bloccata
+2 pota di vetro --> Aula 441 (Mussi)
+Aula 441
+1 arco centrale --> Aula 430 (Sartori)
+Aula 430
+2 porta verde --> Aula 417 (poncini)//da poncini basta prendere poi una porta di entrata
+1 porta di rame --> stanza vuota
+
+//per motivi di convegneza il collegamento1 è un false, e il collegamento2 è true (nella gestione scrittura sul file)
+
+
+COSE DA SISTEMAREEEEE
+//sistemare cosa fare se non si hanno raccolto i cavi davanti alla porta di valsangiacomo
+//e se non hai preso il telefono e vai nel buco nella parete
+//gestione eccezioni!!!!!
+//per proseguire fare in modo che aspetti 2 secondi

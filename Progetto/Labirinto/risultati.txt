@@ -1,0 +1,23 @@
+Gioco 06/06/2025-13:28
+Nome: lol
+Inventario: []
+Hai risposto correttamente a Valsangiacomo
+inventario aggiornato: [cavo verde, occhiali rotti]
+Hai scelto una porta nera
+inventario aggiornato: [cavo verde, occhiali rotti, occhiali rotti]
+Hai portato gli occhiali da Montalbetti 
+inventario aggiornato: [cavo verde, occhiali rotti]
+Hai risposto sbagliato a Montalbetti
+inventario aggiornato: [occhiali rotti]
+Hai scelto una porta con dei cavi rotti
+Hai risposto sbagliato a Bernaschina
+Hai scelto una porta di metallo, 
+Hai risposto sbagliato a Pallucci
+Hai scelto una porta di vetro
+Hai risposto sbagliato a Mussi
+Hai scelto un arco centrale
+Hai risposto correttamente a Sartori
+Hai scelto una porta di rame, 
+Sei tornato indietro 
+Hai risposto sbagliato a Poncini
+Gioco Finito alle06/06/2025-13:31

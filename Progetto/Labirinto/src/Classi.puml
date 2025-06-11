@@ -1,0 +1,66 @@
+@startuml
+
+class Main
+
+class Gioco
+
+class Giocatore {
+    - nome : String
+    - inventario : Inventario
+    + getNome()
+    + setNome()
+    + getInventario()
+    + toString()
+    + equals()
+    + hashCode()
+}
+
+class Inventario {
+    - oggetti : List<Oggetto>
+    + getOgetti()
+    + setOgetti()
+    + toString()
+}
+
+class Oggetto {
+    - nome : String
+    + getNome()
+    + toString()
+    + equals()
+    + hashCode()
+}
+
+class Personaggio {
+    - nome : String
+    - domanda : String
+    - opzioni : List<String>
+    + getNome()
+    + getDomanda()
+    + toString()
+    + equals()
+    + hashCode()
+}
+
+class Stanza {
+    - nome : String
+    - descrizione : String
+    - collegamento1 : Stanza
+    - collegamento2 : Stanza
+    + getNome()
+    + getDescrizione()
+    + getCollegamento1()
+    + getCollegamento2()
+    + toString()
+    + equals()
+    + hashCode()
+}
+
+
+Giocatore --> Inventario
+Inventario --> Oggetto
+Stanza --> Personaggio
+Gioco --> Giocatore
+Gioco --> Stanza
+Main --> Gioco
+
+@enduml

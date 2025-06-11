@@ -1,0 +1,17 @@
+Gioco labirinto (visualizzazione testo console)
+
+-Movimento in un labirinto testuale
+-Raccolta oggetti
+-Scontri con personaggi (con domande sull'informatica)
+-Due direzioni(una corretta e una bloccata)
+-Fine partita quando si esce dal labirinto
+
+Classi (6):
+-Stanza (descrizione, collegamenti)
+-Oggetto (nome, interazione)
+-Inventario(lista oggetti) --> 
+-Giocatore (nome, inventario) --> nome richiesto all'inizio del gioco
+-Personaggio (nome, domanda)
+-Main (gestione logica + input utente)
+
+Durata stimata a casa 20 ore
